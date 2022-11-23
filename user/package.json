@@ -1,0 +1,18 @@
+{
+  "name": "user",
+  "version": "1.0.0",
+  "description": "Các bước khởi tạo project 1. Mở terminal và thực hiện các lệnh:     npm install     npm install sql     npm install express     npm install ejs 2. Tại terminal chạy lệnh chuyển đến thư mục app:     cd app 3. Tại thư mục app chạy lệnh chuyển đến thư mục database:     cd database 4. Tại thư mục database chạy lần lượt các lệnh sau:    node create_table.js    node insert_table.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "sql": "^0.78.0"
+  }
+}

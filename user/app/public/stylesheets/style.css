@@ -1,0 +1,14 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #FF00FF;
+}
+
+.span-noble{
+  margin-left: 16px;
+  font-size: 22px;
+  color: #FF00FF
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Welcome</title>
+</head>
+
+<body>
+
+<div class="container">
+    <h1 class="mt-4 mb-4 text-center"><b>Hello</b></h1>
+
+    <span id="message"></span>
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col col-sm-9"></div>
+
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered" id="sample_data">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Mobile Number</th>
+                        <th>User Name</th>
+                        <th>Password</th>
+                    </tr>
+                    <%
+                    if(userData.length!=0){
+                        var i=1;
+                    userData.forEach(function(data){
+                    %>
+                    <tr>
+                        <th><%= data.id %></th>
+                        <th><%= data.firstName %></th>
+                        <th><%= data.lastName %></th>
+                        <th><%= data.phone %></th>
+                        <th><%= data.username %></th>
+                        <th><%= data.password %></th>
+                    </tr>
+                    <%  i++; }) %>
+                    <% } else{ %>
+                        <tr>
+                            <td colspan="7">No Data Found</td>
+                        </tr>
+                    <% } %>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+</html>
